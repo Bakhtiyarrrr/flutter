@@ -66,5 +66,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	
+	<!-- Photo / Camera usage descriptions required for image picker -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Нужен доступ к библиотеке фото, чтобы прикреплять изображения к задачам</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Нужен доступ к камере, чтобы делать фото для задач</string>
 </dict>
 </plist>

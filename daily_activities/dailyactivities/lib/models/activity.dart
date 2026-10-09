@@ -1,4 +1,5 @@
 import 'package:hive_ce/hive.dart';
+import 'dart:typed_data';
 
 part 'activity.g.dart';
 
@@ -12,7 +13,6 @@ part 'activity.g.dart';
 //     this.iscompleted = false,
 //   });
 // }
-
 
 @HiveType(typeId: 0)
 class Activity extends HiveObject {
@@ -33,5 +33,9 @@ class Activity extends HiveObject {
     required this.priority,
     this.iscompleted = false,
     this.createdAt,
+    this.imageBytes,
   });
+
+  @HiveField(4)
+  Uint8List? imageBytes;
 }
